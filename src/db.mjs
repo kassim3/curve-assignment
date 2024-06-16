@@ -7,7 +7,9 @@ export const connectMongo = () => mongoose.connect(process.env.MONGO_URL);
 export const disconnectMongo = () => mongoose.disconnect();
 
 export const runDbSeeder = async () => {
+  console.log("Mongo: Seed data");
   await Contract.findOneAndUpdate({}, { name: "Contract 1" }, { upsert: true });
+  console.log("Mongo: Seeded data");
 };
 
 mongoose.connection.on("connected", () => {

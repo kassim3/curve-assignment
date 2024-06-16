@@ -12,6 +12,7 @@
   "description": "",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "mongoose": "^8.4.1"
+    "mongoose": "^8.4.1",
+    "node-xlsx": "^0.24.0"
   }
 }
