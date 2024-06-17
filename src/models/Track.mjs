@@ -19,4 +19,4 @@ const trackSchema = new mongoose.Schema({
   },
 });
 
-export const Contract = mongoose.model("Track", trackSchema);
+export const Track = mongoose.model("Track", trackSchema);
