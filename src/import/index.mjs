@@ -44,7 +44,7 @@ export const runImport = async () => {
           ISRC,
           pLine,
           aliases: aliases.split(";").map((alias) => alias.trim()),
-          contractID: contract._id,
+          contractID: contract?._id ?? null,
         });
       }
     )
